@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html, body {
+        @apply block relative h-full m-0 p-0 overflow-hidden;
+
+        -ms-touch-action: none;
+        -webkit-touch-callout: none;
+        -ms-content-zooming: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-overflow-scrolling: touch;
+        overflow-scrolling: touch;
+
+        -webkit-text-size-adjust: none;
+        -moz-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    }
+
+    #root {
+        @apply flex flex-col w-full h-full;
+    }
+}

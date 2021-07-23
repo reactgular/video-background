@@ -1,0 +1,32 @@
+:root {
+    --video-width: 100vw;
+    --video-height: 100vh;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    :root {
+        --video-height: 56.25vw;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    :root {
+        --video-width: 177.78vh;
+    }
+}
+
+.video-background {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.video-background iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: var(--video-width);
+    height: var(--video-height);
+    transform: translate(-50%, -50%);
+}
