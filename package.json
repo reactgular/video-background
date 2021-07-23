@@ -1,6 +1,7 @@
 {
   "name": "video-background",
   "version": "0.1.0",
+  "homepage": "https://reactgular.github.io/video-background/",
   "private": true,
   "scripts": {
     "start": "cross-env TAILWIND_MODE=watch craco start",
