@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "cross-env TAILWIND_MODE=watch craco start",
-    "build": "craco build"
+    "build": "cross-env BUILD_PATH=docs craco build"
   },
   "browserslist": {
     "production": [
